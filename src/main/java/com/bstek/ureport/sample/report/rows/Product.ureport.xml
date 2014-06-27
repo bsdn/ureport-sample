@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ureport left-margin="19.1" right-margin="19.1" top-margin="25.4" bottom-margin="25.4">
+  <paper type="A4_PAPER" width="209.9" height="297.0"/>
+  <paging type="fixrows" fix-rows="30"/>
+  <header left="" center="" right="上海XX印刷厂监制" font-family="宋体" font-size="9" blod="false" italic="false"/>
+  <footer left="" center="第$[PAGE]页共$[PAGES]页" right="$[DATE] $[TIME]" font-family="宋体" font-size="9" blod="false" italic="false"/>
+  <row h="36" num="0" band="title"/>
+  <cell name="C1" font-family="宋体" font-size="10" align="left" valign="middle" wrap-compute="false" row="0" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="A1" font-family="宋体" font-size="14" align="center" valign="middle" wrap-compute="false" row="0" col="0" expand="none">
+    <content><![CDATA[商品表]]></content>
+  </cell>
+  <cell name="D1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="3" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="E1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="4" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="F1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="5" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="B1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="38" num="1" band="headerrepeat"/>
+  <cell name="C2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="2" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[名称]]></content>
+  </cell>
+  <cell name="A2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="0" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[编号]]></content>
+  </cell>
+  <cell name="D2" font-family="宋体" font-size="14" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[价格]]></content>
+  </cell>
+  <cell name="E2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[单位数量]]></content>
+  </cell>
+  <cell name="F2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="5" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[库存]]></content>
+  </cell>
+  <cell name="B2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="1" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[类别]]></content>
+  </cell>
+  <row h="18" num="2"/>
+  <cell name="C3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="2" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="NAME" aggregate="select"/>
+  </cell>
+  <cell name="A3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="0" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="ID" aggregate="select"/>
+  </cell>
+  <cell name="D3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" format="$#,###.##" row="2" col="3" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="PRICE" aggregate="select"/>
+  </cell>
+  <cell name="E3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="4" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="UNIT_COUNT" aggregate="select"/>
+  </cell>
+  <cell name="F3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="5" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="INVENTORY" aggregate="select"/>
+  </cell>
+  <cell name="B3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="1" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-mapping datasource="ureportdemo" dataset="category" label-field="NAME" value-field="ID"/>
+    <dataset-content dataset-name="product" datasource-name="ureportdemo" field="CATEGORY" aggregate="select"/>
+  </cell>
+  <row h="22" num="3" band="footerrepeat"/>
+  <cell name="A4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="0" expand="none">
+    <content><![CDATA[表尾]]></content>
+  </cell>
+  <cell name="B4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="C4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="D4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="3" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="E4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="4" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="F4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="5" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="22" num="4" band="summary"/>
+  <cell name="A5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="0" expand="none">
+    <content><![CDATA[总结]]></content>
+  </cell>
+  <cell name="B5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="C5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="D5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="3" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="E5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="4" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="F5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="5" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <col w="100" num="3"/>
+  <col w="100" num="0"/>
+  <col w="100" num="2"/>
+  <col w="100" num="4"/>
+  <col w="100" num="5"/>
+  <col w="100" num="1"/>
+  <datasource name="ureportdemo" username="sa" password="" driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:res:/ureportdemo">
+    <dataset name="product" datasource-name="ureportdemo" sql="select top 100 * from product"/>
+    <dataset name="category" datasource-name="ureportdemo" sql="select * from category"/>
+  </datasource>
+</ureport>

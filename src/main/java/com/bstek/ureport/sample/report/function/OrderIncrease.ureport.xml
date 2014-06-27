@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ureport left-margin="19.100000381469727" right-margin="19.100000381469727" top-margin="25.399999618530273" bottom-margin="25.399999618530273">
+  <paper type="A4_PAPER" width="210.0" height="297.0"/>
+  <row h="46" num="1"/>
+  <cell name="A2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="0" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[月份]]></content>
+  </cell>
+  <cell name="B2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="1" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[订单数]]></content>
+  </cell>
+  <cell name="C2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="2" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[商品数]]></content>
+  </cell>
+  <cell name="D2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[金额]]></content>
+  </cell>
+  <cell name="E2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[金额增长]]></content>
+  </cell>
+  <cell name="F2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="5" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[订单数增长额]]></content>
+  </cell>
+  <cell name="G2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,255" forecolor="0,0,0" row="1" col="6" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[金额增长比]]></content>
+  </cell>
+  <row h="35" num="2"/>
+  <cell name="A3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="0" order="asc" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="orders" datasource-name="java-order" field="month" aggregate="group"/>
+  </cell>
+  <cell name="B3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="1" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="orders" datasource-name="java-order" field="id" aggregate="count"/>
+  </cell>
+  <cell name="C3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="2" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="orders" datasource-name="java-order" field="amount" aggregate="sum"/>
+  </cell>
+  <cell name="D3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" format="$#,###.##" row="2" col="3" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="orders" datasource-name="java-order" field="money" aggregate="sum"/>
+  </cell>
+  <cell name="E3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" format="#,###.##" bgcolor="209,209,165" forecolor="255,0,0" row="2" col="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=(position($D3)==0?0:fetch($D3,0)-fetch($D3,-1))]]></content>
+  </cell>
+  <cell name="F3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="209,209,165" forecolor="255,255,0" row="2" col="5" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=(position($B3)==0?0:fetch($B3,0)-fetch($B3,-1))]]></content>
+  </cell>
+  <cell name="G3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="209,209,165" forecolor="0,0,255" row="2" col="6" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=((position($C3)==0?0:(fetch($C3,0)-fetch($C3,-1))/fetch($C3,0))*100).intValue()+"%"]]></content>
+  </cell>
+  <row h="22" num="3"/>
+  <cell name="A4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="0" expand="none">
+    <content><![CDATA[总计：]]></content>
+  </cell>
+  <cell name="B4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="1" expand="none">
+    <content><![CDATA[=SUM(B3)]]></content>
+  </cell>
+  <cell name="C4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="2" expand="none">
+    <content><![CDATA[=SUM(C3)]]></content>
+  </cell>
+  <cell name="D4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" format="$#,###.##" row="3" col="3" expand="none">
+    <content><![CDATA[=SUM(D3)]]></content>
+  </cell>
+  <cell name="E4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" format="#,###.##" row="3" col="4" expand="none">
+    <content><![CDATA[=SUM(E3)]]></content>
+  </cell>
+  <cell name="F4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="5" expand="none">
+    <content><![CDATA[=SUM(F3)]]></content>
+  </cell>
+  <cell name="G4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" forecolor="0,0,255" row="3" col="6" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="38" num="0"/>
+  <cell name="A1" font-family="宋体" bold="true" font-size="13" align="left" valign="middle" wrap-compute="false" row="0" col="0" col-span="7" expand="none">
+    <content><![CDATA[销售增长情况]]></content>
+  </cell>
+  <col w="80" num="0"/>
+  <col w="80" num="1"/>
+  <col w="80" num="2"/>
+  <col w="80" num="3"/>
+  <col w="100" num="4"/>
+  <col w="100" num="5"/>
+  <col w="100" num="6"/>
+  <spring-datasource name="java-order" bean="urp.orderDataProvider">
+    <dataset name="orders" datasource-name="java-order" class="com.bstek.ureport.sample.model.Order"/>
+  </spring-datasource>
+</ureport>

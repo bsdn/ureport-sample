@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+#content{
+	width:100%;
+	height:100%;
+}
+#workspace1{
+	width:100%;
+	height:90%;
+}
+</style>
+<script language="javascript">
+function query(){
+	var url="ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/parameter/Product";
+	var money=document.getElementById("money").value;
+	var iframe1=document.getElementById("workspace1");
+	iframe1.src=url+"&price="+money;
+	//iframe1.src=null;
+}
+</script>
+</head>
+<body>
+<div id="content">
+最低价格：<input id="money" name="money"></input>
+<input type="button" value="提交" onclick="query()"></input>
+<iframe id="workspace1" name="workspace1" src="ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/parameter/Product&price=10"></iframe>
+</div>
+</body>
+</html>

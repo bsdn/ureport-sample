@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" mrc="text/html; charset=gb2312" />
+<title>CSS下拉菜单</title>
+<style>
+body{
+	background-color:white;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:0px;
+	color:white;
+}
+ul,li{
+	margin:0px;
+	padding:0px;
+}
+li{
+	display:inline;
+	list-style:none;
+	list-style-position:outside;
+	text-align:center;
+	font-weight:bold;
+	float:left;
+}
+a:link{
+	color:#336601;
+	text-decoration:none;
+	float:left;
+	width:100px;
+	padding:3px 5px 0px 5px;
+}
+a:visited{
+	color:#336601;
+	text-decoration:none;
+	float:left;
+	padding:3px 5px 0px 5px;
+	width:100px;
+}
+a:hover{
+	color:white;
+	float:left;
+	padding:3px 3px 0px 20px;
+	width:88px;
+	text-decoration:none;
+	background-color:#539D26;
+}
+a:active{
+	color:white;
+	float:left;
+	padding:3px 3px 0px 20px;
+	width:88px;
+	text-decoration:none;
+	background-color:#BD06B4;
+}
+#nav{
+	width:800px;
+	height:30px;
+	border-bottom:0px;
+	padding:0px 5px;
+	position:absolute;
+	z-index:1;
+	left: 198px;
+	top: 25px;
+}
+.list{
+	line-height:20px;
+	text-align:left;
+	padding:4px;
+	font-weight:normal;
+}
+.menu1{
+	width:120px;
+	height:auto;
+	margin:6px 4px 0px 0px;
+	border:1px solid #9CDD75;
+	background-color:#F1FBEC;
+	color:#336601;
+	padding:6px 0px 0px 0px;
+	cursor:hand;
+	overflow-y:hidden;
+	filter:Alpha(opacity=70);
+	-moz-opacity:0.7;
+}
+.menu2{
+	width:120px;
+	height:22px;
+	margin:6px 4px 0px 0px;
+	background-color:#F5F5F5;
+	color:#999999;
+	border:1px solid #EEE8DD;
+	padding:6px 0px 0px 0px;
+	overflow-y:hidden;
+	cursor:hand;
+}
+#workspace1{
+	margin:120px 108px 0px 108px;
+	width:100%;
+	float:right;
+	height:500px;
+	text-align:center;
+	color:black;
+}
+#iframeReport1{
+	width:100%;
+	height:100%;
+	color:black;
+}
+#navTitle{
+margin-top:-30px;
+color:blue;
+font-size:150%;
+}
+#left{
+float:left;
+color:black;
+width:180px;
+height:100%;
+}
+</style>
+</head>
+<body>
+<div id="left">该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打。该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打该页面展示一个Form类型表单报表，使用到日期字段格式化、合并单元格、字段Mapping等功能。并且可以通过调整表单页面大小适应纸张大小，来进行打印或套打</div>
+<div id="nav">
+	<div id="navTitle"><h2>UReport示例</h2></div>
+	<ul>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">表单报表
+	<div class="list">
+		<a href="bigOrders.html">源码下载</a><br />
+        <a href="#">我的博客</a><br />
+        <a href="#">我的日志</a><br />
+        <a href="#">我的音乐</a><br />
+	</div>
+	</li>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">分组报表
+	<div class="list">
+	<a href="/jscss//">.NET圈子</a><br />
+        <a href="#">PHP圈子</a><br />
+        <a href="#">ASP圈子</a><br />
+        <a href="#">JAVA圈子</a><br />
+	</div>
+	</li>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">交叉报表
+	<div class="list">
+		<a href="#">论坛首页</a><br />
+        <a href="#">技术论坛</a><br />
+        <a href="#">图片论坛</a><br />
+	</div>
+	</li>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">分层报表
+	<div class="list">
+        <a href="#">我的帐号</a><br />
+        <a href="#">余额转移</a><br />
+        <a href="#">我的地盘</a><br />
+	</div>
+	</li>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">查询报表
+	<div class="list">
+        <a href="bigOrders.html" target="iframeReport1">销售订单</a><br />
+        <a href="#">余额转移</a><br />
+        <a href="#">我的地盘</a><br />
+	</div>
+	</li>
+	<li class="menu2" onMouseOver="this.className='menu1'" onMouseOut="this.className='menu2'">计算同期比报表
+	<div class="list">
+        <a href="bigOrders.html">我的帐号</a><br />
+        <a href="#">余额转移</a><br />
+        <a href="#">我的地盘</a><br />
+	</div>
+	</li>
+	</ul>
+</div>
+<div id="workspace1">
+<iframe id="iframeReport1" name="iframeReport1"></iframe>
+</div>
+</body>
+</html>

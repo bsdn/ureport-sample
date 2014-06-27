@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ureport left-margin="19.100000381469727" right-margin="19.100000381469727" top-margin="25.399999618530273" bottom-margin="25.399999618530273">
+  <paper type="A4_PAPER" width="210.0" height="297.0"/>
+  <row h="43" num="1"/>
+  <cell name="D2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[性别]]></content>
+  </cell>
+  <cell name="E2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[姓名]]></content>
+  </cell>
+  <cell name="F2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="5" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[年龄]]></content>
+  </cell>
+  <cell name="G2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="6" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[民族]]></content>
+  </cell>
+  <cell name="B2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="1" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[级别]]></content>
+  </cell>
+  <cell name="A2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="0" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[学历]]></content>
+  </cell>
+  <cell name="C2" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,255,255" row="1" col="2" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[政治面貌]]></content>
+  </cell>
+  <row h="20" num="2"/>
+  <cell name="D3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="3" row-span="2" order="asc" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="SEX" aggregate="group"/>
+  </cell>
+  <cell name="E3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="4" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="NAME" aggregate="select"/>
+  </cell>
+  <cell name="F3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="5" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="AGE" aggregate="select"/>
+  </cell>
+  <cell name="G3" font-family="宋体" font-size="10" align="left" valign="middle" wrap-compute="false" row="2" col="6" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="NATION" aggregate="select"/>
+  </cell>
+  <cell name="B3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="1" row-span="3" order="asc" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="WORK_LEVEL" aggregate="group"/>
+  </cell>
+  <cell name="A3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="0" row-span="4" order="asc" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="DEGREE" aggregate="group"/>
+  </cell>
+  <cell name="C3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="2" row-span="2" order="asc" expand="down">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="POLITY_STATE" aggregate="group"/>
+  </cell>
+  <row h="18" num="4"/>
+  <cell name="E5" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="4" col="4" col-span="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=COUNT(E3)]]></content>
+  </cell>
+  <cell name="C5" font-family="宋体" bold="true" font-size="10" align="right" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="4" col="2" col-span="2" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[小计：]]></content>
+  </cell>
+  <row h="37" num="0"/>
+  <cell name="D1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="3" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="E1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="4" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="F1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="5" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="G1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="6" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="B1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="A1" font-family="宋体" bold="true" font-size="15" align="center" valign="middle" wrap-compute="false" row="0" col="0" expand="none">
+    <content><![CDATA[员工表]]></content>
+  </cell>
+  <cell name="C1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="22" num="6"/>
+  <cell name="A7" font-family="宋体" bold="true" font-size="10" align="right" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="6" col="0" col-span="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[总计：]]></content>
+  </cell>
+  <cell name="E7" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="6" col="4" col-span="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=COUNT(E3)]]></content>
+  </cell>
+  <row h="22" num="5"/>
+  <cell name="B6" font-family="宋体" bold="true" font-size="10" align="right" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="5" col="1" col-span="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[小计：]]></content>
+  </cell>
+  <cell name="E6" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="5" col="4" col-span="3" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=COUNT(E3)]]></content>
+  </cell>
+  <row h="22" num="3"/>
+  <cell name="E4" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="3" col="4" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[小计：]]></content>
+  </cell>
+  <cell name="F4" font-family="宋体" bold="true" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="255,216,35" forecolor="255,0,0" row="3" col="5" col-span="2" expand="none">
+    <left-border width="1" color="0,0,0" style="solid"/>
+    <right-border width="1" color="0,0,0" style="solid"/>
+    <top-border width="1" color="0,0,0" style="solid"/>
+    <bottom-border width="1" color="0,0,0" style="solid"/>
+    <content><![CDATA[=COUNT(E3)]]></content>
+  </cell>
+  <col w="100" num="6"/>
+  <col w="61" num="5"/>
+  <col w="100" num="4"/>
+  <col w="77" num="3"/>
+  <col w="100" num="1"/>
+  <col w="100" num="0"/>
+  <col w="100" num="2"/>
+  <datasource name="ureportdemo" username="sa" password="" driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:res:/ureportdemo">
+    <dataset name="employee" datasource-name="ureportdemo" sql="select top 1000 * from employee "/>
+    <dataset name="product" datasource-name="ureportdemo" sql="select * from product"/>
+    <dataset name="orders" datasource-name="ureportdemo" sql="select * from orders where id between '10277' and '10299'"/>
+    <dataset name="customer" datasource-name="ureportdemo" sql="select * from customer"/>
+  </datasource>
+</ureport>

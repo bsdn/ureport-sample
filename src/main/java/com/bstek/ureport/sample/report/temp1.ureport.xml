@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ureport left-margin="19.100000381469727" right-margin="19.100000381469727" top-margin="25.399999618530273" bottom-margin="25.399999618530273">
+  <paper type="A4_PAPER" width="210.0" height="297.0"/>
+  <row h="32" num="0"/>
+  <cell name="B1" font-family="宋体" font-size="10" align="left" valign="middle" wrap-compute="false" row="0" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="A1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="0" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="C1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="20" num="1"/>
+  <cell name="B2" font-family="宋体" font-size="10" align="left" valign="middle" wrap-compute="false" row="1" col="1" expand="down">
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="ID" aggregate="select"/>
+  </cell>
+  <cell name="A2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="1" col="0" expand="down">
+    <dataset-content dataset-name="employee" datasource-name="ureportdemo" field="NAME" aggregate="select"/>
+  </cell>
+  <cell name="C2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="1" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <row h="18" num="2"/>
+  <cell name="B3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="1" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="A3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="0" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <cell name="C3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="2" expand="none">
+    <content><![CDATA[]]></content>
+  </cell>
+  <col w="100" num="2"/>
+  <col w="100" num="0"/>
+  <col w="100" num="1"/>
+  <datasource name="ureportdemo" username="sa" password="" driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:res:/ureportdemo">
+    <dataset name="employee" datasource-name="ureportdemo" sql="select top 1000 * from employee "/>
+    <dataset name="product" datasource-name="ureportdemo" sql="select * from product"/>
+    <dataset name="orders" datasource-name="ureportdemo" sql="select * from orders where id between '10277' and '10299'"/>
+    <dataset name="customer" datasource-name="ureportdemo" sql="select * from customer"/>
+  </datasource>
+</ureport>

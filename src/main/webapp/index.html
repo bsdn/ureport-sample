@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+#left {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+#right {
+	width: 80%;
+	height: 100%;
+	float: right;
+}
+
+#workspace1 {
+	width: 100%;
+	height: 76%;
+	margin-top: 5px;
+}
+
+#left ul {
+	margin-left: -20px; <!--
+	list-style-type: none;
+	-->
+}
+
+li {
+	list-style-type: none;
+	list-style-image: none;
+	background-image: url("images/forward16.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 18px;
+	font-size: 120%;
+	line-height: 20px
+}
+
+li a {
+	text-decoration: none;
+	font-size: 78%;
+}
+
+.reportTitleTop {
+	height: 30px;
+	font-style: italic;
+	font-size: 130%;
+	font-weight: 800;
+	color: #17D5FF;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+#buttons {
+	margin-left: 50%;
+}
+
+.button {
+	font-style: normal;
+	font-size: 70%;
+	padding: 2px 2px;
+	font-weight: 500;
+	height: 30px;
+	line-height: 28px;
+	overflow: hidden;
+	width: 74px;
+	text-align: center;
+	color: #000;
+	border: 1px solid #D8D8D8;
+	border-radius: 2px;
+	cursor: pointer;
+	border-radius: 2px;
+	cursor: pointer;
+	background: none repeat scroll 0% 0% #F7F7F7;
+	font-weight: 500;
+}
+
+a:hover {
+	color: #17D5FF;
+}
+
+#reportDesc {
+	margin-top: 5px;
+	margin-left: 15px;
+	height: 80;
+}
+</style>
+<script type="text/javascript">
+var reports=[{id:'0',title:'主从报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/form/AOrderProduct',desc:'主表显示一个订单，从表显示订单的商品明细。<br/>知识点及实现：<br/>单元格过滤条件、上格。<br/>1.通过设置商品名称单元格过滤条件及上格实现，过滤条件中设置了商品的订单号和订单数据源中的相同。'},
+             {id:'1',title:'表单列表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/form/OrderFormList',desc:'该示例展示Form类型表单列表。<br/>知识点及实现：<br/>1.通过数据集单元格向下扩展属性和自定义单元格的左格实现。'},
+             {id:'2',title:'某客户订单',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/form/AOrderForm',desc:'该示例展示一个Form类型表单报表。<br/>知识点及实现：<br/>1.日期字段格式化、合并单元格、字段Mapping、纸张大小自定义等功能。<br/>2.可以通过调整表单页面大小适应纸张大小，来进行打印。3.可以通过设置表单的背景后设计报表实现套打功能。'},
+             {id:'3',title:'员工纵向分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/group/EmployeeGroupDown',desc:'四级纵向分组报表，根据学历、级别、政治面貌、性别四个属性分组展示员工。<br/>知识点及实现：<br/>1.单元格聚合方式、分组<br/>2.通过设置学历、级别、政治面貌、性别等单元格聚合方式为分组实现。'},
+             {id:'4',title:'统计员工纵向分组报表各个分组',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/group/EmployeeGroupDownCount',desc:'统计分组报表中各个分组中对象的数量。<br/>知识点及实现：<br/>1.分组的列或行后面添加统计单元格<br/>2.使用count()或sum()等聚合函数进行统计。如=COUNT($D1)即显示第1行D列那个单元格数据集合中对象数量。'},
+             {id:'5',title:'员工横向分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/group/EmployeeGroupRight',desc:'四级横向分组报表，根据学历、级别、政治面貌、性别四个属性分组展示员工。<br/>知识点及实现：<br/>1.聚合方式（分组）、数据展开方向（向右）<br/>2.设置学历、级别、政治面貌、性别等单元格聚合方式为分组和展开数据方向为向右。'},
+             {id:'6',title:'统计员工横向分组报表各个分组',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/group/EmployeeGroupRightCount',desc:'统计分组报表中各个分组中对象的数量。<br/>知识点及实现：<br/>1.分组的列或行后面添加统计单元格<br/>2.使用count()或sum()等聚合函数进行统计。如=COUNT($D1)即显示第1行D列那个单元格数据集合中对象数量。'},
+             {id:'7',title:'员工分布表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/cross/EmployeeDegreeWorklevelSex',desc:'本示例统计了一个公司员工中不同学历的男女员工当中不同岗位级别中员工政治面貌情况。<br/>知识点及实现：<br/>1.分组、聚合方式（统计个数）、数据扩展方向2.通过设置表头单元格聚合方式为分组，横向表头单元格数据扩展方向为向右和单元格聚合方式为统计个数实现。'},
+             {id:'8',title:'员工交叉分组统计',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/cross/EmployeeDegreeWorklevelSexCount',desc:'知识点及实现：<br/>1.分组、统计函数<br/>2.通过为交叉报表中分组单元格后添加单元格并使用Count()统计函数实现。如=COUNT($D1)即显示第1行D列那个单元格数据集合中对象数量。'},
+             {id:'9',title:'错行向下扩展分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/tree/EmployeeDown',desc:'像树形展开方式显示不同学历中不同级别的员工。<br/>知识点及实现：<br/>1.聚合方式（分组）、数据展开方向、左父单元格自定义<br/>2.分别设置学历和级别聚合属性为分组，自定义级别和员工姓名单元格的左父单元格实现。'},
+             {id:'10',title:'错行向右扩展分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/tree/EmployeeRight',desc:'像树形展开方式显示不同学历中不同级别下的男女员工。<br/>知识点及实现：<br/>1.聚合方式（分组）、数据展开方向（向右）、上父单元格自定义<br/>2.分别设置学历和级别及性别聚合属性为分组，数据向右展开，自定义级别、性别和员工姓名单元格的上父单元格。'},
+             {id:'11',title:'错行向下向右扩展分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/tree/EmployeeDownRight',desc:'像树形展开方式显示不同学历中不同级别的员工。<br/>知识点及实现：<br/>1.聚合方式（分组）、数据展开方向、左父单元格自定义<br/>2.分别设置学历和级别聚合属性为分组，自定义级别和员工姓名单元格的左父单元格，设置员工姓名向右展开。'},
+             {id:'12',title:'动态参数报表',path:'bigOrders.html',desc:'本示例展示根据传入的参数动态计算报表内容。<br/>知识点及实现：<br/>1.预留参数，语法格式为冒号加参数名<br/>2.本示例设计报表SQL中预留了参数:money，查询时通过request对象传递了用户输入的money实际值。'},
+             {id:'13',title:'销售额增长情况',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/function/OrderIncrease',desc:'本示例统计了1-9月份订单销售情况，以及每个月比上个月销售增长情况。<br/>通过内置函数position()和fetch()实现，如position($D1)即用来判断当前D1单元格展开后的位置，它从0开始，也就是说展开后第一个单元格经过position函数计算后值为0，而不是1；fetch($D1,0)，表示取D1单元格与当前单元格处于同一位置的单元格的值，这里的0就表示与当前单元格平行，如果是-1，则表式取高出当前单元格一行的单元格的值。'},
+             {id:'14',title:'商品单',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/rows/Product',desc:'本示例展示了UReport报表的多种列类型。<br/>知识点及实现：<br/>1.页记录数自定义、页眉页脚自定义、标题列、重复表头、重复表尾设置<br/>2.设计报表时通过点击行后在弹出的右键菜单中设置<br/>3.需点击打印预览查看实现效果'}];
+function ReportHelper(id){
+	this.id=id;
+	this.openReport=function(){
+		var report=reports[id];
+		if(report&&report.path){
+			ReportHelper.setHeaderVisible(true);
+			$id("reportPreview").innerHTML="预览";
+			$id("workspace1").src=report.path;
+			$id("reportTitle").innerHTML=report.title;
+			$id("reportDesc").innerHTML=report.desc;
+		}
+	}
+}
+ReportHelper.openReportNewWindow=function(){
+	url=$id("workspace1").src;
+	if(url){
+		window.open(url);
+	}
+}
+ReportHelper.showReportPath=function(){
+	url=$id("workspace1").src;
+	if(url){
+		alert(url.substring(url.indexOf("classpath:")+10));
+	}
+}
+ReportHelper.setHeaderVisible=function(flag){
+	if(flag){
+		$id("reportDesc").style.display="block";
+		$id("rightBottom").style.display="block";
+	}else{
+		$id("reportDesc").style.display="none";
+		$id("rightBottom").style.display="none";
+	}
+}
+ReportHelper.setWelcome=function(){
+	$id("workspace1").src="welcome.html";
+	$id("reportTitle").innerHTML="UReport介绍";
+}
+ReportHelper.init=function(){
+	var leftDiv=$id("left");
+	if(leftDiv){
+		var items=leftDiv.getElementsByTagName("a");
+			for(var i=0;i<items.length;i++){
+				var openRep=new ReportHelper(i);
+				items[i].onclick=openRep.openReport;
+				items[i].style.cursor='pointer';
+			}
+	}
+	ReportHelper.setHeaderVisible(false);
+	ReportHelper.setWelcome();
+}
+function $id(id){
+	return document.getElementById(id)
+}
+</script>
+</head>
+<body onload="ReportHelper.init();">
+	<div>
+		<div id="left">
+			<ul>
+				<li>表单报表<br /> 
+				<a target="workspace1">主从报表</a><br />
+				<a target="workspace1">表单列表</a><br /> 
+				<a target="workspace1">某客户订单</a><br /> 
+				</li>
+				<li>分组报表<br /> <a target="workspace1">员工纵向分组报表</a><br /> <a
+					target="workspace1">统计员工纵向分组报表各个分组</a><br /> <a
+					target="workspace1">员工横向分组报表</a><br /> <a target="workspace1">统计员工横向分组报表各个分组</a><br />
+				</li>
+				<li>交叉报表<br /> <a target="workspace1">员工分布表</a><br /> <a
+					target="workspace1">员工交叉分组统计</a><br />
+				</li>
+				<li>分层报表<br /> <a target="workspace1">员工分布表</a><br /> <a
+					target="workspace1">销售额增长情况</a><br /> <a target="workspace1">客户统计</a><br />
+				</li>
+				<li>查询报表<br /> <a target="workspace1">大客户订单</a><br />
+				</li>
+				<li>同期比报表<br /> <a target="workspace1">销售额增长情况</a><br />
+				</li>
+				<li>复杂列类型报表<br /> <a target="workspace1">商品单</a><br />
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div id="rightTop">
+				<span id="reportTitle" class="reportTitleTop"></span>
+			</div>
+			<div id="reportDesc"></div>
+			<div id="rightBottom" class="reportTitleTop">
+				<span id="reportPreview"></span> <span id="buttons"><a
+					class="button" onclick="ReportHelper.openReportNewWindow();">在新窗口中预览</a>
+					<a class="button" onclick="ReportHelper.showReportPath();">显示本报表地址</a></span>
+			</div>
+			<iframe id="workspace1" name='workspace1'></iframe>
+		</div>
+	</div>
+</body>
+</html>
