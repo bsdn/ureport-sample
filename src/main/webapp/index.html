@@ -101,7 +101,7 @@ var reports=[{id:'0',title:'主从报表',path:'ureport?action=htmlpreview&repor
              {id:'11',title:'错行向下向右扩展分组报表',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/tree/EmployeeDownRight',desc:'像树形展开方式显示不同学历中不同级别的员工。<br/>知识点及实现：<br/>1.聚合方式（分组）、数据展开方向、左父单元格自定义<br/>2.分别设置学历和级别聚合属性为分组，自定义级别和员工姓名单元格的左父单元格，设置员工姓名向右展开。'},
              {id:'12',title:'动态参数报表',path:'bigOrders.html',desc:'本示例展示根据传入的参数动态计算报表内容。<br/>知识点及实现：<br/>1.预留参数，语法格式为冒号加参数名<br/>2.本示例设计报表SQL中预留了参数:money，查询时通过request对象传递了用户输入的money实际值。'},
              {id:'13',title:'销售额增长情况',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/function/OrderIncrease',desc:'本示例统计了1-9月份订单销售情况，以及每个月比上个月销售增长情况。<br/>通过内置函数position()和fetch()实现，如position($D1)即用来判断当前D1单元格展开后的位置，它从0开始，也就是说展开后第一个单元格经过position函数计算后值为0，而不是1；fetch($D1,0)，表示取D1单元格与当前单元格处于同一位置的单元格的值，这里的0就表示与当前单元格平行，如果是-1，则表式取高出当前单元格一行的单元格的值。'},
-             {id:'14',title:'商品单',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/rows/Product',desc:'本示例展示了UReport报表的多种列类型。<br/>知识点及实现：<br/>1.页记录数自定义、页眉页脚自定义、标题列、重复表头、重复表尾设置<br/>2.设计报表时通过点击行后在弹出的右键菜单中设置<br/>3.需点击打印预览查看实现效果'}];
+             {id:'14',title:'商品单',path:'ureport?action=htmlpreview&report=classpath:com/bstek/ureport/sample/report/rows/Product',desc:'本示例展示了UReport报表的多种行类型。<br/>知识点及实现：<br/>1.页记录数自定义、页眉页脚自定义、标题列、重复表头、重复表尾设置<br/>2.设计报表时通过点击行头部后在弹出的右键菜单中设置<br/>3.需点击打印预览查看实现效果'}];
 function ReportHelper(id){
 	this.id=id;
 	this.openReport=function(){
@@ -174,14 +174,14 @@ function $id(id){
 				<li>交叉报表<br /> <a target="workspace1">员工分布表</a><br /> <a
 					target="workspace1">员工交叉分组统计</a><br />
 				</li>
-				<li>分层报表<br /> <a target="workspace1">员工分布表</a><br /> <a
-					target="workspace1">销售额增长情况</a><br /> <a target="workspace1">客户统计</a><br />
+				<li>分层报表<br /> <a target="workspace1">错行向下扩展分组报表</a><br /> <a
+					target="workspace1">错行向右扩展分组报表</a><br /> <a target="workspace1">错行向下向右扩展分组报表</a><br />
 				</li>
-				<li>查询报表<br /> <a target="workspace1">大客户订单</a><br />
+				<li>查询报表<br /> <a target="workspace1">动态参数报表</a><br />
 				</li>
 				<li>同期比报表<br /> <a target="workspace1">销售额增长情况</a><br />
 				</li>
-				<li>复杂列类型报表<br /> <a target="workspace1">商品单</a><br />
+				<li>复杂行类型报表<br /> <a target="workspace1">商品单</a><br />
 				</li>
 			</ul>
 		</div>

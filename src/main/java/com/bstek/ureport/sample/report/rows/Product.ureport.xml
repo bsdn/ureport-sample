@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ureport left-margin="19.1" right-margin="19.1" top-margin="25.4" bottom-margin="25.4">
+<ureport left-margin="19.100000381469727" right-margin="19.100000381469727" top-margin="25.399999618530273" bottom-margin="25.399999618530273">
   <paper type="A4_PAPER" width="209.9" height="297.0"/>
   <paging type="fixrows" fix-rows="30"/>
   <header left="" center="" right="上海XX印刷厂监制" font-family="宋体" font-size="9" blod="false" italic="false"/>
   <footer left="" center="第$[PAGE]页共$[PAGES]页" right="$[DATE] $[TIME]" font-family="宋体" font-size="9" blod="false" italic="false"/>
-  <row h="36" num="0" band="title"/>
   <cell name="C1" font-family="宋体" font-size="10" align="left" valign="middle" wrap-compute="false" row="0" col="2" expand="none">
     <content><![CDATA[]]></content>
   </cell>
@@ -24,7 +23,6 @@
   <cell name="B1" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="0" col="1" expand="none">
     <content><![CDATA[]]></content>
   </cell>
-  <row h="38" num="1" band="headerrepeat"/>
   <cell name="C2" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" bgcolor="128,128,192" forecolor="255,255,255" row="1" col="2" expand="none">
     <left-border width="1" color="0,0,0" style="solid"/>
     <right-border width="1" color="0,0,0" style="solid"/>
@@ -67,7 +65,6 @@
     <bottom-border width="1" color="0,0,0" style="solid"/>
     <content><![CDATA[类别]]></content>
   </cell>
-  <row h="18" num="2"/>
   <cell name="C3" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="2" col="2" expand="down">
     <left-border width="1" color="0,0,0" style="solid"/>
     <right-border width="1" color="0,0,0" style="solid"/>
@@ -111,9 +108,8 @@
     <dataset-mapping datasource="ureportdemo" dataset="category" label-field="NAME" value-field="ID"/>
     <dataset-content dataset-name="product" datasource-name="ureportdemo" field="CATEGORY" aggregate="select"/>
   </cell>
-  <row h="22" num="3" band="footerrepeat"/>
   <cell name="A4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="0" expand="none">
-    <content><![CDATA[表尾]]></content>
+    <content><![CDATA[这里是“重复表尾”]]></content>
   </cell>
   <cell name="B4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="1" expand="none">
     <content><![CDATA[]]></content>
@@ -130,9 +126,8 @@
   <cell name="F4" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="3" col="5" expand="none">
     <content><![CDATA[]]></content>
   </cell>
-  <row h="22" num="4" band="summary"/>
   <cell name="A5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="0" expand="none">
-    <content><![CDATA[总结]]></content>
+    <content><![CDATA[这里是重复表尾“总结”]]></content>
   </cell>
   <cell name="B5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="1" expand="none">
     <content><![CDATA[]]></content>
@@ -149,6 +144,11 @@
   <cell name="F5" font-family="宋体" font-size="10" align="center" valign="middle" wrap-compute="false" row="4" col="5" expand="none">
     <content><![CDATA[]]></content>
   </cell>
+  <row h="36" num="0" band="title"/>
+  <row h="38" num="1" band="headerrepeat"/>
+  <row h="18" num="2"/>
+  <row h="22" num="3" band="footerrepeat"/>
+  <row h="22" num="4" band="summary"/>
   <col w="100" num="3"/>
   <col w="100" num="0"/>
   <col w="100" num="2"/>
