@@ -124,7 +124,12 @@ ReportHelper.openReportNewWindow=function(){
 ReportHelper.showReportFile=function(){
 	url=$id("workspace1").src;
 	if(url){
-		filePath=url.substring(url.indexOf("classpath:")+10);
+		var filePath;
+		if(url.indexOf("bigOrders")!=-1){
+			filePath="com/bstek/ureport/sample/report/parameter/Product";
+		}else {
+			filePath=url.substring(url.indexOf("classpath:")+10);
+		}
 		window.open("ureport-file.d?rp="+filePath);
 	}
 }
