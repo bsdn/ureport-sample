@@ -121,10 +121,11 @@ ReportHelper.openReportNewWindow=function(){
 		window.open(url);
 	}
 }
-ReportHelper.showReportPath=function(){
+ReportHelper.showReportFile=function(){
 	url=$id("workspace1").src;
 	if(url){
-		alert(url.substring(url.indexOf("classpath:")+10));
+		filePath=url.substring(url.indexOf("classpath:")+10);
+		window.open("ureport-file.d?rp="+filePath);
 	}
 }
 ReportHelper.setHeaderVisible=function(flag){
@@ -193,7 +194,7 @@ function $id(id){
 			<div id="rightBottom" class="reportTitleTop">
 				<span id="reportPreview"></span> <span id="buttons"><a
 					class="button" onclick="ReportHelper.openReportNewWindow();">在新窗口中预览</a>
-					<a class="button" onclick="ReportHelper.showReportPath();">显示本报表地址</a></span>
+					<a class="button" onclick="ReportHelper.showReportFile();">查看报表模板</a></span>
 			</div>
 			<iframe id="workspace1" name='workspace1'></iframe>
 		</div>

@@ -12,12 +12,20 @@
 		<param-value>WEB-INF/context.xml</param-value>
 	</context-param>
 	<servlet>
+		<servlet-name>ureport</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>ureportServlet</servlet-name>
 		<servlet-class>com.bstek.ureport.servlet.UReportServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ureportServlet</servlet-name>
 		<url-pattern>/ureport</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ureport</servlet-name>
+		<url-pattern>*.d</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
